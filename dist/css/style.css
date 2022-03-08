@@ -135,11 +135,11 @@ h1, h2, h3, h4, h5, h6 {
 .menu__link {
   color: #212121;
   font-size: 18px;
+  transition: all 0.3s ease-in-out;
 }
 .menu__link:hover {
   cursor: pointer;
   color: #4368c8;
-  transition: all 0.3s ease-in-out;
 }
 
 .menu__sub-list {
@@ -170,14 +170,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu__sub-link {
   color: white;
-  transition: 0.5s ease all;
+  transition: all 0.3s ease-in-out;
 }
 .menu__sub-link:hover {
-  color: #2a2caf;
-}
-
-.menu__arrow {
-  display: none;
+  color: #4368c8;
 }
 
 .header__button {
@@ -986,8 +982,8 @@ textarea:focus {
   justify-content: center;
   padding: 10px 30px;
   width: 100%;
-  max-width: 600px;
-  height: 500px;
+  max-width: 450px;
+  height: 400px;
   border-radius: 20px;
   font-family: Rubik;
 }
@@ -1236,6 +1232,9 @@ body._pc .menu__list > li:hover .menu__sub-list {
   transform: translate(0px, 0px);
   pointer-events: all;
 }
+body._touch .page__section_1 {
+  background-attachment: scroll;
+}
 body._touch .menu__list > li {
   display: flex;
   align-items: center;
@@ -1247,11 +1246,8 @@ body._touch .menu__arrow {
   display: block;
   width: 0;
   height: 0;
-  margin: 0px 0px 0px 5px;
+  margin-left: 10px;
   transition: transform 0.3s ease 0s;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 10px solid #000;
 }
 body._touch .menu__list > li .menu__sub-list {
   transform: translate(0px, 10%);
@@ -1266,11 +1262,11 @@ body._touch .menu__list > li._active .menu__sub-list {
   pointer-events: all;
 }
 body._touch .menu__list > li._active .menu__arrow {
-  transform: rotate(-180deg);
+  transform: rotate(-180deg) translate(-18px, -24px);
 }
 
 /* Cтили для компрьютерных */
-@media (min-width: 1023px) {
+@media (min-width: 1025px) {
   .menu__list {
     display: flex;
     align-items: center;
@@ -1295,7 +1291,7 @@ body._touch .menu__list > li._active .menu__arrow {
     transition: all 0.3s ease 0s;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .menu__icon {
     z-index: 5;
     display: block;
@@ -1378,6 +1374,9 @@ body._touch .menu__list > li._active .menu__arrow {
   .menu__list > li a {
     color: #000;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
   }
   .menu__list > li:last-child {
     margin-bottom: 0;
@@ -1397,6 +1396,9 @@ body._touch .menu__list > li._active .menu__arrow {
   .menu__link {
     font-size: 24px;
   }
+  .menu__link:hover {
+    color: #212121;
+  }
 
   .menu__sub-list {
     position: relative;
@@ -1415,17 +1417,16 @@ body._touch .menu__list > li._active .menu__arrow {
   }
 
   .icons {
-    left: 45%;
     background: none;
     justify-content: center;
-    transform: translateX(-50%);
     background-color: none;
+    margin: 0px;
     box-shadow: none;
+    padding: 0;
   }
 
   .icons__list {
     display: flex;
-    margin: 0px;
     font-size: 24px;
     gap: 30px;
   }

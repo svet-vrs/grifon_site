@@ -46,10 +46,10 @@
 .menu__link {
   color: #212121;
   font-size: 18px;
+  transition: all 0.3s ease-in-out;
   &:hover {
     cursor: pointer;
     color: #4368c8;
-    transition: all 0.3s ease-in-out;
   }
 }
 .menu__sub-list {
@@ -76,20 +76,16 @@
     }
   }
 }
-
 .sub-list_2 {
   width: 100px;
 }
 .menu__sub-link {
   color: rgb(255, 255, 255);
-  transition: 0.5s ease all;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
-    color: rgb(42, 44, 175);
+    color: #4368c8;
   }
-}
-.menu__arrow {
-  display: none;
 }
 .header__button {
   align-items: center;

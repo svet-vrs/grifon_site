@@ -23,9 +23,9 @@
               </header>
         
               <form method="POST" action="telegram.php" class="callback_form">
-                <input name="user_name" type="text" class="feedback-input" placeholder="Имя" id="name" />
-                <input name="user_phone" type="text" class="feedback-input" id="email" placeholder="Номер телефона" />
-                <textarea name="user_description" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+                <input name="user_name" type="text" class="feedback-input" autocomplete="name" placeholder="Имя" id="name" />
+                <input name="user_phone" type="text" class="feedback-input" autocomplete="tel" id="email" placeholder="Номер телефона" />
+                <textarea name="user_description" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Комментарий (Необязательно)"></textarea>
                 <div class="modal__footer">
                   <button class="button" data-custom-open="modal" href='javascript:void(0);'>Отправить</button>
                 </div>
@@ -226,9 +226,9 @@
                 <h1>Понравился какой-то вариант?</h1><h1>Свяжитесь с нами</h1>
               </div>
               <div class="form__content">
-                <input name="user_name" type="text" class="feedback-input" placeholder="Имя" id="name" />
-                <input name="user_phone" type="text" class="feedback-input" id="email" placeholder="Номер телефона" />
-                <textarea name="user_description" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+                <input name="user_name" type="text" class="feedback-input" autocomplete="name" placeholder="Имя" id="name" />
+                <input name="user_phone" type="text" class="feedback-input" id="email" autocomplete="tel" placeholder="Номер телефона" />
+                <textarea name="user_description" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Комментарий (Необязательно)"></textarea>
                 <div class="submit">
                   <input type="submit" value="Заказать звонок" id="button-blue" />
                 </div>
