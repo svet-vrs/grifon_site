@@ -189,7 +189,32 @@ for (let i = 0; i < acc.length; i++) {
   });
 }
 
+document.onkeydown = function(e){
+  var keyCode = e.keyCode || e.charCode;
+  if (keyCode == 32) e.preventDefault();
+};
 
+// Игра динозаврик
+let character = document.getElementById("character")
+let block = document.getElementById("block")
 
+document.addEventListener('keydown', function (event) {
+    if (event.keyCode == 32 || event.keyCode == 38 || event.keyCode == 87) {
+        if (character.classList == "animate") { return }
+        character.classList.add("animate");
+        setTimeout(function () {
+            character.classList.remove("animate");
+        }, 1000);
+    }
+});
 
+let check = setInterval(function () {
+    let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+    let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
+    if (blockLeft < 152 && blockLeft > 30 && characterTop >= 510) {
+        block.style.animation = "none";
+        alert("Game over. Try again!");
+        block.style.animation = "goLeft 3s infinite linear";
+    }
+}) 
 

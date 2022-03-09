@@ -1,0 +1,62 @@
+#border {
+  margin-top: 20px;
+  max-width: 1200px;
+  width: 100%;
+  height: 780px;
+  border: 1px solid black;
+  background-image: url("/img/gamebg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 40%;
+}
+#character {
+  width: 125px;
+  height: 145px;
+  // background: green;
+  position: relative;
+  top: 580px;
+  left: 30px;
+}
+.animate {
+  animation: jump 1s infinite linear;
+}
+@keyframes jump {
+  0% {
+    top: 580px;
+  }
+  20% {
+    top: 490px;
+  }
+  40% {
+    top: 480px;
+  }
+  60% {
+    top: 480px;
+  }
+  80% {
+    top: 490px;
+  }
+  100% {
+    top: 580px;
+  }
+}
+#block {
+  width: 73px;
+  height: 75px;
+  // background: red;
+  position: relative;
+  top: 505px;
+  left: 580px;
+  animation: goLeft 3s infinite linear;
+  img {
+    height: 75px;
+  }
+}
+@keyframes goLeft {
+  0% {
+    left: 1127px;
+  }
+  100% {
+    left: 0px;
+  }
+}
