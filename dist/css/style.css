@@ -252,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   background-image: url("../img/mainbg.jpg");
   background-attachment: fixed;
-  background-position: 40% 50%;
+  background-position: 50% 0%;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -267,7 +267,7 @@ h1, h2, h3, h4, h5, h6 {
 .page__section_1 .page__title {
   display: flex;
   justify-content: center;
-  color: white;
+  color: #fff;
   font-weight: 550;
   font-size: calc(38px + 22 * (100vw - 320px) / 880);
   margin-bottom: calc(10px + 20 * (100vw - 320px) / 880);
@@ -275,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
 .page__section_1 .page__sub-title {
   text-align: center;
   color: #5e48ed;
-  color: white;
+  color: black;
   font-size: calc(20px + 8 * (100vw - 320px) / 880);
 }
 

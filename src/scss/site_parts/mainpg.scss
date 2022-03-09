@@ -48,7 +48,7 @@
   display: flex;
   background-image: url("../img/mainbg.jpg");
   background-attachment: fixed;
-  background-position: 40% 50%;
+  background-position: 50% 0%;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -63,7 +63,7 @@
   .page__title {
     display: flex;
     justify-content: center;
-    color: white;
+    color: #fff;
     font-weight: 550;
     font-size: calc(38px + (60 - 38) * ((100vw - 320px) / (1200 - 320)));
     margin-bottom: calc(10px + (30 - 10) * ((100vw - 320px) / (1200 - 320)));
@@ -73,7 +73,7 @@
     color: #5e48ed;
     // font-size: calc(30px + (40 - 30) * ((100vw - 320px) / (1200 - 320)));
     // font-family: Rubik_bold;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: calc(20px + (28 - 20) * ((100vw - 320px) / (1200 - 320)));
   }
 }
@@ -175,7 +175,6 @@
   }
 }
 
-textarea
-{
+textarea {
   resize: none;
 }
