@@ -11,6 +11,7 @@
 @import "micromodal";
 @import "site_parts/modal";
 @import "footer";
+@import "site_parts/grifonchik";
 
 html,
 body {
@@ -267,6 +268,9 @@ body {
     height: 21vh;
   }
   .about__cards {
+    flex-direction: column;
+  }
+  .page__qustions {
     flex-direction: column;
   }
 

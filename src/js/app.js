@@ -168,28 +168,27 @@ MicroModal.init({
     awaitCloseAnimation: false, // [9]
     debugMode: true // [10]
 })
-    
+   
+// Спойлеры
+let acc = document.getElementsByClassName("accordion");
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    for (let j = 0; j < acc.length; j++){
+        if(acc[j] != this){
+          acc[j].classList.remove("active");
+          acc[j].nextElementSibling.style.maxHeight = null;
+      }
+    }
+    let panel = this.nextElementSibling; 
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
 
-
-
-
-//кнопка отправиить заказ
-// $(document).ready(function() {
-//     $(".submit").click(function() {
-//       $(".submit").addClass("loading");
-//       setTimeout(function() {
-//         $(".submit").addClass("hide-loading");
-//         // For failed icon just replace ".done" with ".failed"
-//         $(".done").addClass("finish");
-//       }, 600);
-//       setTimeout(function() {
-//         $(".submit").removeClass("loading");
-//         $(".submit").removeClass("hide-loading");
-//         $(".done").removeClass("finish");
-//         $(".failed").removeClass("finish");
-//       }, 5000);
-//     })
-//   });
 
 
 

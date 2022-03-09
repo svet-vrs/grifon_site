@@ -5,13 +5,6 @@
     <div class="wrapper">
       @@include('html/header.html',{})
       <main class="page">
-        <section class="page__section page__section_1">
-          <div class="page__content">
-            <h1 class="page__title">GRIFON AGENCY</h1>
-            <button class="button home-callback__button" data-custom-open="modal-1" data-form="Форма секции Нам доверяют">Заказать звонок</button>
-            <a data-goto=".page__section_2" class="scroll-down"></a>
-          </div>
-        </section>
         <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
           <div class="modal__overlay" tabindex="-1" data-micromodal-close>
             <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
@@ -23,8 +16,10 @@
         
               <form method="POST" action="telegram.php" class="callback_form">
                 <input name="user_name" type="text" class="feedback-input" autocomplete="name" placeholder="Имя" id="name" />
-                <input name="user_phone" type="text" class="feedback-input" autocomplete="tel" id="email" placeholder="Номер телефона" />
-                <textarea name="user_description" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Комментарий (Необязательно)"></textarea>
+                <input name="user_phone" type="text" class="feedback-input" autocomplete="tel" id="email"
+                  placeholder="Номер телефона" />
+                <textarea name="user_description" class="validate[required,length[6,300]] feedback-input" id="comment"
+                  placeholder="Комментарий (Необязательно)"></textarea>
                 <div class="modal__footer">
                   <button class="button" data-custom-open="modal" href='javascript:void(0);'>Отправить</button>
                 </div>
@@ -33,10 +28,16 @@
             </div>
           </div>
         </div>
+        <section class="page__section page__section_1">
+          <div class="page__content">
+            <h1 class="page__title">GRIFON AGENCY</h1>
+            <button class="button home-callback__button" data-custom-open="modal-1" data-form="Форма секции Нам доверяют">Заказать звонок</button>
+            <a data-goto=".page__section_2" class="scroll-down"></a>
+          </div>
+        </section>
         <section class="page__section page__section_2">
           <div class="page__content" data-aos="fade-up">
             <h2 class="page__sub-title">Об агенстве</h2>
-            <!-- <h1 class="page__sub-about">Почему именно мы?</h1> -->
             <div class="page__about_content about">
               <div class="about__cards">
                 <div class="about__card">
@@ -66,9 +67,6 @@
                   <img src="img\about_apartments.png"> 
                 </div>
               </div>
-            </div>
-          
-              
             </div>
           </div>
         </section>
@@ -235,6 +233,62 @@
             </form>
           </div>
         </section>
+        <section class="page__section page__section_8">
+          <div class="page__content" data-aos="fade-in">
+            <h2 class="page__sub-title">Часто задаваемые вопросы</h2>
+            <p class="page__desc">Если вы не нашли ответ на свой вопрос, можете связаться с менеджером</p>
+            <div class="page__qustions" data-aos="fade-up">
+              <div class="questions__text">
+                <button class="accordion">Section 1</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+                </div>
+                
+                <button class="accordion">Section 2</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+                </div>
+                
+                <button class="accordion">Section 3</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+                </div>
+              </div>
+              <div class="questions__img" data-aos="fade-up">
+                <img src="img\grifonchik.png">
+              </div>
+              <div class="questions__text">
+                <button class="accordion">Section 1</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+                </div>
+                
+                <button class="accordion">Section 2</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+                </div>
+                
+                <button class="accordion">Section 3</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
         
       </main>
       @@include('html/footer.html',{})
