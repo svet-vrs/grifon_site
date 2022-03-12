@@ -5,7 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="css/style.min.css">
-	<link rel="stylesheet" href="../micromodal.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 	<script defer src="https://kit.fontawesome.com/ffb22c65be.js" crossorigin="anonymous"></script>
@@ -16,8 +15,6 @@
     <div class="loaderwrapper">
       <div class="loader"></div>
     </div>
-
-
     <div class="wrapper">
       <header class="header">
   <div class="header__container">
@@ -31,13 +28,13 @@
       <nav class="menu__body">
         <ul class="menu__list">
           <li>
-            <a data-goto=".page__section_1" href="index.html" class="menu__link">Главная</a>
+            <a data-goto=".page__section_1" href="index.html#page__section_1" class="menu__link">Главная</a>
           </li>
           <li>
             <a href="developers.html" class="menu__link">Застройщики</a>
           </li>
           <li>
-            <a data-goto=".page__section_4" href="#" class="menu__link">Наша услуги &nbsp;<span class="menu__arrow"><i class="fa-solid fa-angle-down"></i></span></a>
+            <a data-goto=".page__section_4" href="index.html#page__section_4" class="menu__link">Наша услуги &nbsp;<span class="menu__arrow"><i class="fa-solid fa-angle-down"></i></span></a>
             <ul class="menu__sub-list">
               <li><a href="#" class="menu__sub-link">Продажа квартир</a></li>
               <li><a href="#" class="menu__sub-link">Продажа домов</a></li>
@@ -46,16 +43,15 @@
             </ul>
           </li>
           <li>
-            <a data-goto=".page__section_6" href="#" class="menu__link">Контакты</a>
+            <a data-goto=".page__section_6" href="index.html#page__section_6" class="menu__link">Контакты</a>
           </li>
           <li>
             <a href="#" class="menu__link">Полезная информация &nbsp;<span class="menu__arrow"><i class="fa-solid fa-angle-down"></i></span></a>
             <ul class="menu__sub-list">
-              <li><a href="#" data-goto=".page__section_3" class="menu__sub-link">Наши партнеры</a></li>
-              <li><a href="#" data-goto=".page__section_5" class="menu__sub-link">Наша команда</a></li>
-              <li><a href="#" data-goto=".page__section_8" class="menu__sub-link">Часто задаваемые вопросы</a></li>
-              <li><a href="#" data-goto=".page__section_9" id="open_game" class="menu__sub-link">Мини-игра</a></li>
-              
+              <li><a href="index.html#page__section_3" data-goto=".page__section_3" class="menu__sub-link">Наши партнеры</a></li>
+              <li><a href="index.html#page__section_5" data-goto=".page__section_5" class="menu__sub-link">Наша команда</a></li>
+              <li><a href="index.html#page__section_8" data-goto=".page__section_8" class="menu__sub-link">Часто задаваемые вопросы</a></li>
+              <li><a href="index.html#page__section_9" data-goto=".page__section_9" id="open_game" class="menu__sub-link">Мини-игра</a></li>
             </ul> 
           </li>
           <div class="icons mobile_btn">
@@ -105,14 +101,14 @@
             </div>
           </div>
         </div>
-        <section class="page__section page__section_1">
+        <section class="page__section page__section_1" id="page__section_1">
           <div class="page__content">
             <h1 class="page__title">GRIFON AGENCY</h1>
             <button class="button home-callback__button" data-custom-open="modal-1" data-form="Форма секции Нам доверяют">Заказать звонок</button>
             <a data-goto=".page__section_2" class="scroll-down"></a>
           </div>
         </section>
-        <section class="page__section page__section_2">
+        <section class="page__section page__section_2" id="page__section_2">
           <div class="page__content" data-aos="fade-up">
             <h2 class="page__sub-title">Об агенстве</h2>
             <div class="page__about_content about">
@@ -147,7 +143,7 @@
             </div>
           </div>
         </section>
-        <section class="page__section page__section_3">
+        <section class="page__section page__section_3" id="page__section_3">
           <div class="page__content partners" data-aos="fade-in">
             <h2 class="page__sub-title">Наши партнеры</h2>
             <div class="image-slider swiper-container">
@@ -188,7 +184,7 @@
             </div>
           </div>
         </section>
-        <section class="page__section page__section_4">
+        <section class="page__section page__section_4" id="page__section_4">
           <div class="page__content" data-aos="fade-up">
             <h2 class="page__sub-title" >Чем мы занимаемся?</h2>
             <div class="page__catalog catalog">
@@ -211,7 +207,7 @@
             </div>
           </div>
         </section>
-        <section class="page__section page__section_5">
+        <section class="page__section page__section_5" id="page__section_5">
           <div class="page__content" data-aos="fade-in">
             <h2 class="page__sub-title">Наша команда</h2>
             <div class="page__text">
@@ -270,7 +266,7 @@
             </div>
           </div>
         </section>
-        <section class="page__section page__section_6">
+        <section class="page__section page__section_6" id="page__section_6">
           <div class="page__content" data-aos="fade-up">
             <h2 class="page__sub-title">Как нас найти</h2>
             <div class="page__map map">
@@ -293,7 +289,7 @@
           </div>
           
         </section>
-        <section class="page__section page__section_7" data-aos="fade-up">
+        <section class="page__section page__section_7" data-aos="fade-up" id="page__section_7">
           <div id="form-main">
             <form method="POST" action="telegram.php" class="form" id="form1" >
               <div class="form__title">
@@ -310,7 +306,7 @@
             </form>
           </div>
         </section>
-        <section class="page__section page__section_8">
+        <section class="page__section page__section_8" id="page__section_8">
           <div class="page__content" data-aos="fade-in">
             <h2 class="page__sub-title">Часто задаваемые вопросы</h2>
             <p class="page__desc">Если вы не нашли ответ на свой вопрос, можете связаться с менеджером</p>
@@ -365,7 +361,7 @@
             </div>
           </div>
         </section>
-        <section id="game" class="page__section page__section_9">
+        <section id="game" class="page__section page__section_9" id="page__section_9">
           <h2 class="page__sub-title">Мини-игра</h2>
           <p class="page__desc">Вы можете cыграть в нашу мини-игру в ожидании звонка менеджера</p>
           <div id="border">
@@ -457,7 +453,6 @@
     </script>
     <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <!-- <script src="libs/jquery/jquery-3.6.0.min.js"></script> -->
     <script src="js/app.min.js"></script>
   </body>
 </html>

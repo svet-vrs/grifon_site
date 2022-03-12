@@ -85,6 +85,10 @@ if (menuLinks.length > 0){
         }
     }
 }
+
+  
+// Слайдер
+
 var mobs = window.matchMedia("(max-width: 320px)");
 var mobl = window.matchMedia("(max-width: 425px)");
 var tablets = window.matchMedia("(max-width: 768px)");
@@ -113,8 +117,6 @@ else{
         }
     }
 }
-
-// Слайдер
 new Swiper(".image-slider", {
     pagination: {
         el: ".swiper-pagination",
