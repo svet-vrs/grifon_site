@@ -1,20 +1,21 @@
 @import "source/reset";
 @import "source/fonts";
 @import "header";
-@import "site_parts/mainpg";
-@import "site_parts/about";
-@import "site_parts/partners";
-@import "site_parts/work";
-@import "site_parts/team";
-@import "site_parts/map";
-@import "site_parts/form";
+@import "main_page_parts/mainpg";
+@import "main_page_parts/about";
+@import "main_page_parts/partners";
+@import "main_page_parts/work";
+@import "main_page_parts/team";
+@import "main_page_parts/map";
+@import "main_page_parts/form";
 @import "micromodal";
-@import "site_parts/modal";
+@import "main_page_parts/modal";
 @import "footer";
 @import "dino";
-@import "site_parts/grifonchik";
-@import "site_parts/loader";
-@import "site_parts/scrollup";
+@import "developers";
+@import "main_page_parts/grifonchik";
+@import "main_page_parts/loader";
+@import "main_page_parts/scrollup";
 
 html,
 body {

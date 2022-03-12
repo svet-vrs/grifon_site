@@ -207,7 +207,7 @@ let game_menu = document.getElementById("game_menu");
 let game_menu_btn = document.getElementById("game_menu_btn");
 var counter = 0;
 var charSpeed = 600;
-var houseSpeed = 2;
+var houseSpeed = 2.5;
 
 button.addEventListener('click', function () {
     game.style.display = "flex";
@@ -331,6 +331,7 @@ var goTopBtn = document.getElementById('scrollupbutton');
 
 window.addEventListener('scroll', trackScroll);
 goTopBtn.addEventListener('click', backToTop);
+
 
 
 //loader//
