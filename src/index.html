@@ -297,7 +297,11 @@
           <h2 class="page__sub-title">Мини-игра</h2>
           <p class="page__desc">Вы можете cыграть в нашу мини-игру в ожидании звонка менеджера</p>
           <div id="border">
-            <p class="score_area">Пройдено: <span id="scoreSpan"></span> км.</p>
+            <p id="scoreArea" class="score_area">Пройдено: <span id="scoreSpan"></span> км.</p>
+            <div id="game_menu">
+              <h2 class="page__sub-title">Конец игры! Вас счет: <span id="gameScore"></span> </h2>
+              <button id="game_menu_btn" class="game_menu__button">Продолжить</button>
+            </div>
             <div id="character">
               <img id="charimg" src="/img/grifon_stop.png">
             </div>

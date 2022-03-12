@@ -16,12 +16,46 @@
 .score_area {
   position: absolute;
   font-size: 18px;
-  left: 76%;
   align-self: flex-start;
-  padding: 15px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 25px;
+  display: none;
+  justify-content: flex-end;
   span {
     font-size: 18px;
-    display: none;
+  }
+}
+#game_menu {
+  display: none;
+  position: absolute;
+  align-self: center;
+  max-width: 1200px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .game_menu__button {
+    outline: none;
+    border: none;
+    background-color: #5f4bd9;
+    color: #fff;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 10px 28px;
+    width: 300px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    position: relative;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+      background-color: #6f5bf0;
+    }
   }
 }
 #character {

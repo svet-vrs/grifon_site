@@ -203,6 +203,8 @@ let block3 = document.getElementById("house2");
 let border = document.getElementById("border");
 let button = document.getElementById("open_game"); 
 let game = document.getElementById("game");
+let game_menu = document.getElementById("game_menu");
+let game_menu_btn = document.getElementById("game_menu_btn");
 var counter = 0;
 var charSpeed = 600;
 var houseSpeed = 2;
@@ -227,11 +229,16 @@ function game_stop() {
     block2.style.animation = "none";
     block3.style.animation = "none";
     characterImg.src = "/img/grifon_stop.png";
-    border.style.backgroundImage = "url('/img/game_road_stop.jpg')";    
+    border.style.backgroundImage = "url('/img/game_road_stop.jpg')";
+    game_menu.style.display = "flex";
+    document.getElementById("gameScore").innerHTML = "&nbsp;" + Math.floor(counter / 100);
+    document.getElementById("scoreArea").style.display = "none";
 }
 function game_start() {
+    game_menu.style.display = "none";
+    switch_animation();
     counter = 0;
-    document.getElementById("scoreSpan").style.display = "inline-block";
+    document.getElementById("scoreArea").style.display = "flex";
     block1.style.animation = "goLeft " + houseSpeed + "s infinite linear";
     setTimeout(function () {
         block2.style.animation = "goLeft " + houseSpeed + "s infinite linear";
@@ -273,6 +280,9 @@ border.addEventListener('click', function () {
         border.classList.add("game_run");
     }
 });
+game_menu_btn.addEventListener('click', function () {
+    game_start();
+});
 
 
 let check = setInterval(function () {
@@ -282,29 +292,28 @@ let check = setInterval(function () {
     let block3Left = parseInt(window.getComputedStyle(block3).getPropertyValue("left"));
     if (block1Left < 40 && block1Left > 0 && characterTop <= 150) {
         game_stop();
-        alert("Конец игры! Вы прошли: " + Math.floor(counter / 100));
-        setTimeout(function () {
-            game_start();
-            }, 100);
+        // setTimeout(function () {
+        //     alert("Конец игры! Вы прошли: " + Math.floor(counter / 100));
+        //     game_start();
+        //     }, 100);
     }
     else if (block2Left <= -70 && block2Left >= -110 && characterTop <= 50) {
-        alert(block3Left)
         game_stop();
-        alert("Конец игры! Вы прошли: " + Math.floor(counter / 100));
-        setTimeout(function () {
-            game_start();
-            }, 100);
+        // setTimeout(function () {
+        //     alert("Конец игры! Вы прошли: " + Math.floor(counter / 100));
+        //     game_start();
+        //     }, 100);
     }
     else if (block3Left <= -204 && block3Left >= -232 && characterTop <= 150) {
         game_stop();
-        alert("Конец игры! Вы прошли: " + Math.floor(counter / 100));
-        setTimeout(function () {
-            game_start();
-            }, 100);
+        // setTimeout(function () {
+        //     alert("Конец игры! Вы прошли: " + Math.floor(counter / 100));
+        //     game_start();
+        //     }, 100);
     }
     else{
         counter++;
-        document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
+        document.getElementById("scoreSpan").innerHTML = "&nbsp;"+Math.floor(counter/100);
     }
 }) 
 
