@@ -292,30 +292,45 @@ let check = setInterval(function () {
     let block3Left = parseInt(window.getComputedStyle(block3).getPropertyValue("left"));
     if (block1Left < 40 && block1Left > 0 && characterTop <= 150) {
         game_stop();
-        // setTimeout(function () {
-        //     alert("Конец игры! Вы прошли: " + Math.floor(counter / 100));
-        //     game_start();
-        //     }, 100);
     }
     else if (block2Left <= -70 && block2Left >= -110 && characterTop <= 50) {
         game_stop();
-        // setTimeout(function () {
-        //     alert("Конец игры! Вы прошли: " + Math.floor(counter / 100));
-        //     game_start();
-        //     }, 100);
     }
     else if (block3Left <= -204 && block3Left >= -232 && characterTop <= 150) {
         game_stop();
-        // setTimeout(function () {
-        //     alert("Конец игры! Вы прошли: " + Math.floor(counter / 100));
-        //     game_start();
-        //     }, 100);
     }
     else{
         counter++;
         document.getElementById("scoreSpan").innerHTML = "&nbsp;"+Math.floor(counter/100);
     }
 }) 
+
+// Кнопка наверх
+
+
+function trackScroll() {
+    var scrolled = window.pageYOffset;
+    var coords = document.documentElement.clientHeight;
+
+    if (scrolled > coords) {
+        goTopBtn.classList.add('showbtn');
+    }
+    if (scrolled < coords) {
+        goTopBtn.classList.remove('showbtn');
+    }
+}
+
+function backToTop() {
+    if (window.pageYOffset > 0) {
+        window.scrollBy(0, -80);
+        setTimeout(backToTop, 0);
+    }
+}
+
+var goTopBtn = document.getElementById('scrollupbutton');
+
+window.addEventListener('scroll', trackScroll);
+goTopBtn.addEventListener('click', backToTop);
 
 
 //loader//
