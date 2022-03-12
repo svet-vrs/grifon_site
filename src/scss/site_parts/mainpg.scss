@@ -40,6 +40,7 @@
   text-align: center;
 }
 .page__desc {
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1200 - 320)));
   text-align: center;
 }
 .page__sub-about {
@@ -97,6 +98,9 @@
       margin: 0px 30px;
     }
   }
+}
+.page__section_9 {
+  display: none;
 }
 
 .home-callback__button {

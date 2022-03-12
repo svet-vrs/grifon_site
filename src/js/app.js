@@ -195,26 +195,127 @@ document.onkeydown = function(e){
 };
 
 // Игра динозаврик
-let character = document.getElementById("character")
-let block = document.getElementById("block")
+let character = document.getElementById("character");
+let characterImg = document.getElementById("charimg");
+let block1 = document.getElementById("house1");
+let block2 = document.getElementById("car1");
+let block3 = document.getElementById("house2");
+let border = document.getElementById("border");
+let button = document.getElementById("open_game"); 
+let game = document.getElementById("game");
+var counter = 0;
+var charSpeed = 600;
+var houseSpeed = 2;
 
+button.addEventListener('click', function () {
+    game.style.display = "flex";
+    const gotoBlock = document.querySelector(".page__section_9");
+    const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+    if (iconMenu.classList.contains('_active')) {
+        document.body.classList.remove('_lock');
+        iconMenu.classList.remove('_active');
+        menuBody.classList.remove('_active')
+    }
+    window.scrollTo({
+        top: gotoBlockValue,
+        behavior: "smooth"
+    });
+
+});
+function game_stop() {
+    block1.style.animation = "none";
+    block2.style.animation = "none";
+    block3.style.animation = "none";
+    characterImg.src = "/img/grifon_stop.png";
+    border.style.backgroundImage = "url('/img/game_road_stop.jpg')";    
+}
+function game_start() {
+    counter = 0;
+    document.getElementById("scoreSpan").style.display = "inline-block";
+    block1.style.animation = "goLeft " + houseSpeed + "s infinite linear";
+    setTimeout(function () {
+        block2.style.animation = "goLeft " + houseSpeed + "s infinite linear";
+    }, 500);
+    setTimeout(function () {
+        block3.style.animation = "goLeft "+houseSpeed+"s infinite linear";
+    }, 1100);
+    characterImg.src = "/img/grifon.gif";
+    border.style.backgroundImage = "url('/img/game_bg.gif')";
+}
+function switch_animation() {
+    if (character.classList == "animate") { return }
+    character.classList.add("animate");
+    setTimeout(function () {
+        character.classList.remove("animate");
+    }, charSpeed);
+}
+
+
+// Пробел, стрелочка вверх, буква w
 document.addEventListener('keydown', function (event) {
     if (event.keyCode == 32 || event.keyCode == 38 || event.keyCode == 87) {
-        if (character.classList == "animate") { return }
-        character.classList.add("animate");
-        setTimeout(function () {
-            character.classList.remove("animate");
-        }, 1000);
+        if (border.classList == "game_run") {
+            switch_animation();
+        }
+        else {
+            game_start()
+            border.classList.add("game_run");
+        }
+    }
+});
+// Для клика и мобилок
+border.addEventListener('click', function () {
+    if (border.classList == "game_run") {
+        switch_animation();
+    }
+    else {
+        game_start()
+        border.classList.add("game_run");
     }
 });
 
+
 let check = setInterval(function () {
-    let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-    let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-    if (blockLeft < 152 && blockLeft > 30 && characterTop >= 510) {
-        block.style.animation = "none";
-        alert("Game over. Try again!");
-        block.style.animation = "goLeft 3s infinite linear";
+    let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("bottom"));
+    let block1Left = parseInt(window.getComputedStyle(block1).getPropertyValue("left"));
+    let block2Left = parseInt(window.getComputedStyle(block2).getPropertyValue("left"));
+    let block3Left = parseInt(window.getComputedStyle(block3).getPropertyValue("left"));
+    if (block1Left < 40 && block1Left > 0 && characterTop <= 150) {
+        game_stop();
+        alert("Конец игры! Вы прошли: " + Math.floor(counter / 100));
+        setTimeout(function () {
+            game_start();
+            }, 100);
+    }
+    else if (block2Left <= -70 && block2Left >= -110 && characterTop <= 50) {
+        alert(block3Left)
+        game_stop();
+        alert("Конец игры! Вы прошли: " + Math.floor(counter / 100));
+        setTimeout(function () {
+            game_start();
+            }, 100);
+    }
+    else if (block3Left <= -204 && block3Left >= -232 && characterTop <= 150) {
+        game_stop();
+        alert("Конец игры! Вы прошли: " + Math.floor(counter / 100));
+        setTimeout(function () {
+            game_start();
+            }, 100);
+    }
+    else{
+        counter++;
+        document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
     }
 }) 
 
+
+//loader//
+
+let loaderwrapper = document.querySelector('.loaderwrapper');
+
+window.addEventListener('load', () => {
+    loaderwrapper.classList.add('hide');
+    setTimeout(() => {
+        loaderwrapper.remove();
+     },600)
+});

@@ -2,6 +2,11 @@
 <html lang="en">
   @@include('html/head.html',{ "title":"Главная" })
   <body>
+    <div class="loaderwrapper">
+      <div class="loader"></div>
+    </div>
+
+
     <div class="wrapper">
       @@include('html/header.html',{})
       <main class="page">
@@ -227,7 +232,7 @@
                 <input name="user_phone" type="text" class="feedback-input" id="email" autocomplete="tel" placeholder="Номер телефона" />
                 <textarea name="user_description" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Комментарий (Необязательно)"></textarea>
                 <div class="submit">
-                  <input type="submit" value="Заказать звонок" id="button-blue" />
+                  <input type="submit" value="Заказать звонок" onclick="open_game()" id="button-blue"/>
                 </div>
               </div>
             </form>
@@ -288,17 +293,25 @@
             </div>
           </div>
         </section>
-        <section class="page__section page__section_9">
+        <section id="game" class="page__section page__section_9">
           <h2 class="page__sub-title">Мини-игра</h2>
-          <p class="page__desc">Вы можете поиграть в наше мини-игру в ожидании звонка менеджера</p>
+          <p class="page__desc">Вы можете cыграть в нашу мини-игру в ожидании звонка менеджера</p>
           <div id="border">
+            <p class="score_area">Пройдено: <span id="scoreSpan"></span> км.</p>
             <div id="character">
-              <img src="\img\grifon.gif">
+              <img id="charimg" src="/img/grifon_stop.png">
             </div>
-            <div id="block">
-              <img src="\img\house.png">
+            <div id="house1">
+              <img src="\img\house1.png">
+            </div>
+            <div id="car1">
+              <img src="\img\car1.png">
+            </div>
+            <div id="house2">
+              <img src="\img\house2.png">
             </div>
           </div>
+         
         </section>   
       </main>
       @@include('html/footer.html',{})
