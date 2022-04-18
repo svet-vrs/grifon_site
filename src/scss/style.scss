@@ -191,6 +191,8 @@ body {
       left: 0;
       height: 80px;
       background-color: #fff;
+      border-bottom-right-radius: 40px;
+      border-bottom-left-radius: 40px;
       z-index: 2;
     }
   }
@@ -278,7 +280,23 @@ body {
     flex-direction: column;
   }
 
-  // .about__card {
-  //   width: 100%;
-  // }
+}
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #ffffff;
+  box-shadow: 0 0 2px rgba(0,0,0,.2) inset;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #6284ce;
+  border-radius: 8px;
+  border: 3px solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #7c7c7c;
 }
