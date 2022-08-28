@@ -1416,7 +1416,7 @@ textarea:focus {
   font-size: calc(26px + 10 * (100vw - 320px) / 880);
 }
 .page__section_dev .page__content .dev__desc_text {
-  font-size: 14px;
+  font-size: 15px;
 }
 .page__section_dev .page__content .dev:nth-child(even) {
   text-align: left;
