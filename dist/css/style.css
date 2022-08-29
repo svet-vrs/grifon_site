@@ -547,6 +547,10 @@ textarea {
 .page__catalog .catalog__item:hover {
   cursor: pointer;
 }
+.page__catalog .catalog__item .catalog__title {
+  text-decoration: none;
+  color: white;
+}
 .page__catalog img {
   width: auto;
 }
@@ -573,75 +577,6 @@ textarea {
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 4;
-}
-
-.page__section_5 .page__text {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 1200px;
-  width: 100%;
-}
-
-.our-team {
-  border-radius: 15px;
-  text-align: center;
-}
-
-.our-team .pic {
-  padding: 10px;
-  margin-bottom: 25px;
-  height: 100%;
-  transition: all 0.5s ease 0s;
-}
-
-.pic img {
-  width: 100%;
-  height: auto;
-}
-
-.our-team .title {
-  font-weight: 600;
-  color: white;
-  text-transform: uppercase;
-  font-size: 20px;
-  margin: 0 0 7px 0;
-}
-
-.our-team .post {
-  color: #bbb124;
-  text-transform: capitalize;
-  font-size: 15px;
-  margin-bottom: 15px;
-}
-
-.our-team .social {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.our-team .social li {
-  display: inline-block;
-  margin-right: 5px;
-}
-
-.our-team .social li a {
-  border-radius: 50%;
-  font-size: 15px;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  display: block;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  transition: all 0.5s ease 0s;
-}
-
-.our-team:hover .pic {
-  border-radius: 50%;
-  transform: scale(1.1);
 }
 
 .page__section_6 .page__sub-title {
@@ -924,6 +859,11 @@ textarea:focus {
 .modal__btn:focus, .modal__btn:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
+}
+
+.callback_form2 p {
+  margin-top: 30px;
+  font-size: 20px;
 }
 
 .modal__btn-primary {
@@ -1582,6 +1522,36 @@ textarea:focus {
 #scrollupbutton.showbtn {
   opacity: 1;
   visibility: visible;
+}
+
+button.modal-trigger, button.modal-close {
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  padding: 7px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.1em;
+  color: #7fadf2;
+  border: 2px solid #96bcf4;
+  border-radius: 100px;
+  background-color: #fff;
+}
+
+.modal-trigger {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.modal-trigger:active {
+  margin: 2px 0 0 0;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 html,
