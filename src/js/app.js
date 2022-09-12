@@ -346,3 +346,34 @@ window.addEventListener('load', () => {
         loaderwrapper.remove();
      },600)
 });
+
+
+//lang
+
+var arrLang = {
+    'en': {
+        'mainpage': 'Main page',
+        'developers': 'Developers',
+        'ourservices': 'Our services',
+        'contacts': 'Contacts',
+        'usefulinformation': 'Useful information',
+        
+    },
+    'ru': {
+        'mainpage': 'Главная',
+        'developers': 'Застройщики',
+        'ourservices': 'Наши услуги',
+        'contacts': 'Контакты',
+        'usefulinformation': 'Полезная информация',
+    }
+}
+
+document.querySelector(function() {
+    document.querySelector('.translate').click(function() {
+      var lang = document.querySelector(this).attr('id');
+
+      document.querySelector('.lang').each(function(index, item) {
+        document.querySelector(this).text(arrLang[lang][document.querySelector(this).attr('key')]);
+      });
+    });
+  });
