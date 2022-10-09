@@ -723,7 +723,8 @@ textarea:focus {
 
 .button-blue {
   margin-top: calc(10px + 10 * (100vw - 320px) / 880);
-  width: 300px;
+  max-width: 400px;
+  width: calc(220px + 180 * (100vw - 320px) / 880);
   height: 50px;
   border: 0px solid transparent;
   cursor: pointer;

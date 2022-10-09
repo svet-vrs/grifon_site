@@ -203,7 +203,8 @@ let block1 = document.getElementById("house1");
 let block2 = document.getElementById("car1");
 let block3 = document.getElementById("house2");
 let border = document.getElementById("border");
-let button = document.getElementById("open_game"); 
+let button = document.getElementById("open_game");
+let button1 = document.getElementById("open_game1");
 let game = document.getElementById("game");
 let game_menu = document.getElementById("game_menu");
 let game_menu_btn = document.getElementById("game_menu_btn");
@@ -227,6 +228,10 @@ button.addEventListener('click', function () {
     });
 
 });
+button1.addEventListener("click", function () {
+  game.style.display = "flex";
+});
+
 close_btn.addEventListener("click", function () {
     game_stop();
     game.style.display = "none";
