@@ -413,7 +413,7 @@ const langArr = {
     en: "If you did not find the answer to your question, you can contact the manager",
     ua: "Якщо ви не знайшли відповіді на своє запитання, можете зв'язатися з менеджером",
   },
-// Подзаголовки первой секции
+  // Подзаголовки первой секции
   subtitle1: {
     ru: "Професиональная команда экспертов на рынке премиальных объектов",
     en: "A professional team of experts in the premium property market",
@@ -434,40 +434,37 @@ const langArr = {
     en: "<p>Gryphon Real Estate Agency is a modern, friendly, positive and experienced team of specialists - experts in the real estate market of Ukraine and the world.</p><p> Our main task is to become a specialist for you who will provide a solution to your question!</p><p> The agency is in conditions of constant learning, professional and personal growth, which allows us to work efficiently, competently, to achieve results. To solve your issue, we will need to define your request, and meet your need as accurately as possible, and implement it!</p><p>Our strategy is friendly relations with our client, the desire to help effectively, and save your time in order to minimize risks and resources. </p><p>With the help of our team, you can completely lose your worries and get a solution to your problem. Instead of promises, we choose real actions!</p>",
     ua: "<p>Агентство нерухомості Грифон – це сучасна, дружня, позитивна та досвідчена команда фахівців - експертів на ринку нерухомості України та світу.</p><p> Наше головне завдання – стати для вас фахівцем, який забезпечить вирішення Вашого питання!</p><p> Агентство перебуває в умовах постійного навчання, професійного та особистісного зростання, дозволяє нам якісно, ​​грамотно, працювати на досягнення результату. Для вирішення Вашого питання нам потрібно буде – визначити Ваш запит, і максимально точно задовольнити Вашу потребу, і здійснити її! ризики та ресурси. </p><p>За допомогою нашої команди Ви зможете повністю позбутися хвилювань і отримати вирішення Вашого завдання. Замість обіцянок, ми обираємо реальні дії!</p>",
   },
-// Форма обратной связи
-  callformbtn:{
+  // Форма обратной связи
+  callformbtn: {
     ru: "Заказать звонок",
     en: "Request a call",
     ua: "Замовити дзвінок",
   },
-  callform1:{
+  callform1: {
     ru: "Оформить заявку",
     en: "Make a request",
     ua: "Оформити заявку",
   },
-  callform2:{
+  callform2: {
     ru: "Имя",
     en: "Name",
     ua: "Ім'я",
   },
-  callform3:{
+  callform3: {
     ru: "Номер телефона",
     en: "Phone number",
     ua: "Номер телефону",
   },
-  callform4:{
+  callform4: {
     ru: "Комментарий (Необязательно)",
     en: "Comment (Optional)",
     ua: "Коментар (Необов'язково)",
   },
-  callform5:{
+  callform5: {
     ru: "Отправить",
     en: "Send",
     ua: "Надіслати",
   },
-  
-
-
   // Элементы меню
   menu1: {
     ru: "Главная",
@@ -522,7 +519,7 @@ const langArr = {
   menu11: {
     ru: "Полезная информация &nbsp;<span class='menu__arrow'><i class='fa-solid fa-angle-down'></i></span>",
     en: "Useful information &nbsp;<span class='menu__arrow'><i class='fa-solid fa-angle-down'></i></span>",
-      ua: "Корисна інформація &nbsp;<span class='menu__arrow'><i class='fa-solid fa-angle-down'></i></span>",
+    ua: "Корисна інформація &nbsp;<span class='menu__arrow'><i class='fa-solid fa-angle-down'></i></span>",
   },
   menu12: {
     ru: "Наши партнеры",
@@ -544,6 +541,196 @@ const langArr = {
     en: "Mini game",
     ua: "Міні-гра",
   },
+  //   Виды услуг
+  work1: {
+    ru: "Продажа/Аренда Квартир",
+    en: "Sale/Rent Apartments",
+    ua: "Продаж/оренда квартир",
+  },
+  work2: {
+    ru: "Продажа/Аренда коммерческой недвижимости",
+    en: "Sale/Rental of commercial real estate",
+    ua: "Продаж комерційної нерухомості",
+  },
+  work3: {
+    ru: "Продажа/Аренда домов",
+    en: "Sale/Rent of houses",
+    ua: "Продаж/Оренда будинків",
+  },
+  work4: {
+    ru: "Продажа/Аренда земельных участков",
+    en: "Sale/Rental of land plots",
+    ua: "Продаж/Оренда земельних ділянок",
+  },
+  work5: {
+    ru: "Бизнес под ключ",
+    en: "Turnkey business",
+    ua: "Бізнес під ключ",
+  },
+  work6: {
+    ru: "Инвестиционное предложение",
+    en: "Investment proposal",
+    ua: "Інвестиційна пропозиція",
+  },
+  work7: {
+    ru: "Недвижимость за рубежом",
+    en: "Real estate abroad",
+    ua: "Нерухомість за кордоном",
+  },
+  //  Контакты
+  contact1: {
+    ru: "<h1>Контакты</h1>",
+    en: "<h1>Contacts</h1>",
+    ua: "<h1>Контакти</h1>",
+  },
+  contact2: {
+    ru: "<p>ул. Маршала Жукова</p><p>График работы:</p><p>ПН-ВС Круглосуточно</p><p>+380677595191</p>",
+    en: "<p>st. Marshal Zhukov</p><p>Working hours:</p><p>Mon-Sun 24/7</p><p>+380677595191</p>",
+    ua: "<p>вул. Маршала Жукова</p><p>Графік роботи:</p><p>ПН-ВС Цілодобово</p><p>+380677595191</p>",
+  },
+  // Форма обратной связи 2
+  callformbtn2: {
+    ru: "Заказать звонок",
+    en: "Request a call",
+    ua: "Замовити дзвінок",
+  },
+  "callform2-2": {
+    ru: "Имя",
+    en: "Name",
+    ua: "Ім'я",
+  },
+  "callform2-3": {
+    ru: "Номер телефона",
+    en: "Phone number",
+    ua: "Номер телефону",
+  },
+  "callform2-4": {
+    ru: "Комментарий (Необязательно)",
+    en: "Comment (Optional)",
+    ua: "Коментар (Необов'язково)",
+  },
+  //   Ответы на вопросы
+  question1: {
+    ru: "Зачем мне обращаться к риэлтору при продаже квартиры?",
+    en: "Why should I contact a realtor when selling an apartment?",
+    ua: "Навіщо мені звертатися до ріелтора під час продажу квартири?",
+  },
+  question2: {
+    ru: "На что обратить внимание при покупке квартиры?",
+    en: "What to look for when buying an apartment?",
+    ua: "На що звернути увагу під час купівлі квартири?",
+  },
+  question3: {
+    ru: "Какие у меня будут расходы при продаже недвижимости?",
+    en: "What will my costs be when selling a property?",
+    ua: "Які в мене будуть витрати на продаж нерухомості?",
+  },
+  question4: {
+    ru: "Основные этапы купли-продажи недвижимости",
+    en: "The main stages of the purchase and sale of real estate",
+    ua: "Основні етапи купівлі-продажу нерухомості",
+  },
+  question5: {
+    ru: "Как избежать рисков при продаже недвижимости?",
+    en: "How to avoid risks when selling real estate?",
+    ua: "Як уникнути ризиків під час продажу нерухомості?",
+  },
+  question6: {
+    ru: "Чем вы рискуете, покупая недвижимость самостоятельно?",
+    en: "What are your risks when buying property on your own?",
+    ua: "Чим ви ризикуєте, купуючи нерухомість самостійно?",
+  },
+  answer1: {
+    ru: "Сделка при участии профессионального риэлтора значительно безопаснее самостоятельного заключения договора. Помимо знаний, специалист обладает опытом – иногда подозрительные объекты видно сразу, благодаря тому, что в практике встречались аналогичные случаи.",
+    en: "A deal with the participation of a professional realtor is much safer than concluding an agreement on your own. In addition to knowledge, a specialist has experience - sometimes suspicious objects are immediately visible, due to the fact that similar cases have occurred in practice.",
+    ua: "Угода за участю професійного ріелтора значно безпечніша за самостійне укладання договору. Крім знань, фахівець має досвід – іноді підозрілі об'єкти видно відразу, завдяки тому, що на практиці траплялися аналогічні випадки.",
+  },
+  answer2: {
+    ru: "Выбрав подходящую квартиру, изучите правоустанавливающие документы продавца, убедитесь в их подлинности. Договор купли-продажи, дарственная, решение суда и т.д. должны быть полностью корректны.",
+    en: "Having chosen a suitable apartment, study the title documents of the seller, make sure they are authentic. Purchase and sale agreement, deed of gift, court decision, etc. must be completely correct.",
+    ua: "Вибравши відповідну квартиру, вивчіть документи продавця, які встановлюють, переконайтеся в їх справжності. Договір купівлі-продажу, дарчого, рішення суду і т.д. мають бути повністю коректними.",
+  },
+  answer3: {
+    ru: "Размер гонорара риэлтора при продаже недвижимости в Одессе оговаривается в начале сотрудничества, он является окончательным и не подлежит изменению. Гонорар может быть изменен по предварительному согласованию, если итоговый объем работ оказался на порядок больше, чем планируемый. Кроме того, продавец несет дополнительные расходы на оплату государственной пошлины, а также в частных случаях: если нужные документы отсутствуют на руках и их необходимо восстанавливать или запрашивать, если необходимо оформлять нотариальное согласие супруга, доверенности и так далее.",
+    en: "The amount of the realtor's fee when selling real estate in Odessa is negotiated at the beginning of cooperation, it is final and cannot be changed. The fee can be changed by prior agreement if the final amount of work turned out to be an order of magnitude more than planned. In addition, the seller bears additional costs for paying the state fee, as well as in particular cases: if the necessary documents are not on hand and need to be restored or requested, if it is necessary to draw up a notarized consent of the spouse, powers of attorney, and so on.",
+    ua: "Розмір гонорару ріелтора під час продажу нерухомості в Одесі обговорюється на початку співпраці, він є остаточним і не підлягає зміні. Гонорар може бути змінений за попереднім погодженням, якщо підсумковий обсяг робіт виявився на порядок більшим, ніж запланований. Крім того, продавець несе додаткові витрати на оплату державного мита, а також у окремих випадках: якщо потрібні документи відсутні на руках і їх необхідно відновлювати або вимагати, якщо необхідно оформлювати нотаріальну згоду чоловіка, довіреності тощо.",
+  },
+  answer4: {
+    ru: "От объекта к объекту этапы могут несколько разниться, но последовательность всегда остается примерно следующей: Поиск объекта/покупателя, переговоры сторон Внесение задатка. Проверка юридической чистоты объекта. Подготовка сделки. Заключение сделки – подписание договора. Государственная регистрация права собственности покупателя. Исполнение условий сделки – передача объекта, его оплата и других, прописанных в договоре. Завершение сделки – подписание передаточного акта.",
+    en: "From object to object, the stages may vary somewhat, but the sequence always remains approximately as follows: Search for an object / buyer, negotiations of the parties Making a deposit. Checking the legal purity of the object. Deal preparation. The conclusion of the transaction is the signing of the contract. State registration of the buyer's ownership. Fulfillment of the terms of the transaction - the transfer of the object, its payment and others prescribed in the contract. Completion of the transaction - signing the transfer deed.",
+    ua: "Від об'єкта до об'єкта етапи можуть дещо відрізнятися, але послідовність завжди залишається приблизно наступною: Пошук об'єкта/покупця, переговори сторін Внесення задатку. Перевірка юридичної чистоти об'єкта. Підготовка угоди. Укладання угоди – підписання договору. Державна реєстрація права власності покупця. Виконання умов угоди – передача об'єкта, його оплата та інших, прописаних у договорі. Завершення угоди – підписання передавального акта.",
+  },
+  answer5: {
+    ru: "Продавцы недвижимости подвержены риску мошенничества или возникновения ошибок чуть меньше, чем покупатели. Впрочем, не стоит расслабляться – внимательность необходима каждому. Постоянный мониторинг рынка, изучение предложений и спроса помогут назначить адекватную цену. Никому не хочется по незнанию продать недвижимость значительно дешевле рыночной цены, но и чересчур высокую назначать не стоит, если вы не готовы ждать «того самого» покупателя долгие месяцы. Проявите внимание к документам: одна маленькая ошибка может стать причиной больших проблем. Переделывать целый пакет документов сложнее, чем изначально все тщательно проверить.",
+    en: "Real estate sellers are at slightly less risk of fraud or errors than buyers. However, do not relax - attention is necessary for everyone. Constant monitoring of the market, study of supply and demand will help to set an adequate price. No one wants to unknowingly sell real estate much cheaper than the market price, but you should not appoint too high if you are not ready to wait for the “same” buyer for many months. Pay attention to documents: one small mistake can cause big problems. It is more difficult to redo a whole package of documents than to carefully check everything from the very beginning.",
+    ua: "Продавці нерухомості схильні до ризику шахрайства або виникнення помилок трохи менше, ніж покупці. Втім, не варто розслаблятися – уважність потрібна кожному. Постійний моніторинг ринку, вивчення пропозицій та попиту допоможуть призначити адекватну ціну. Нікому не хочеться за незнанням продати нерухомість значно дешевше за ринкову ціну, але й надто високу призначати не варто, якщо ви не готові чекати «того самого» покупця довгі місяці. Зверніть увагу до документів: одна маленька помилка може стати причиною великих проблем. Переробляти цілий пакет документів складніше, ніж спочатку ретельно перевірити.",
+  },
+  answer6: {
+    ru: "Вариантов негативного развития события для покупателя по определению больше, чем для продавца. Риски, как правило, ограничены ценой выбранного объекта. Невнимательное изучение документов и недостаточная глубина юридической проверки могут оставить пространство для маневра мошенников. К примеру, если вы боитесь обидеть потенциального продавца приглашением в психоневрологический диспансер, это может обернуться фатальной ошибкой. Если после заключения сделки окажется, что продавец недееспособен – с огромной долей вероятности суд отменит сделку, и не факт, что покупателю вернется полная сумма. Кроме того, существует масса случаев с неожиданным появлением лиц, которые имеют права или претензии на объект недвижимости, который покупатель уже начал считать своим. Например, длительно отсутствующих родственников или супругов, с которыми собственник не поддерживает отношения, но документально развод не оформлен. Примеров мошенничества – масса, чтобы не стать жертвой, необходимо предельно внимательно изучать каждый документ.",
+    en: "By definition, there are more options for a negative development of an event for a buyer than for a seller. Risks are usually limited to the price of the selected object. Inattentive study of documents and insufficient depth of due diligence can leave room for fraudsters to maneuver. For example, if you are afraid to offend a potential salesperson with an invitation to a psychoneurological dispensary, this can turn into a fatal mistake. If, after the conclusion of the transaction, it turns out that the seller is incompetent, it is very likely that the court will cancel the transaction, and it is not a fact that the full amount will be returned to the buyer. In addition, there are many cases with the unexpected appearance of persons who have rights or claims to a property that the buyer has already begun to consider his own. For example, long-term absent relatives or spouses with whom the owner does not maintain relations, but the divorce is not documented. There are a lot of examples of fraud, in order not to become a victim, it is necessary to carefully study each document.",
+    ua: "Варіантів негативного розвитку події для покупця за визначенням більше, ніж для продавця. Ризики зазвичай обмежені ціною обраного об'єкта. Неуважне вивчення документів та недостатня глибина юридичної перевірки можуть залишити простір для маневру шахраїв. Наприклад, якщо ви боїтеся образити потенційного продавця запрошенням у психоневрологічний диспансер, це може призвести до фатальної помилки. Якщо після укладання угоди виявиться, що продавець є недієздатним – з величезною часткою ймовірності суд скасує угоду, і не факт, що покупцеві повернеться повна сума. Крім того, існує безліч випадків з несподіваною появою осіб, які мають права чи претензії на об'єкт нерухомості, який покупець уже почав вважати своїм. Наприклад, родичів або подружжя, з якими власник не підтримує відносини, але документально розлучення не оформлене. Приклади шахрайства – маса, щоб не стати жертвою, необхідно гранично уважно вивчати кожен документ.",
+  },
+  gamebtn: {
+    ru: "Сыграть в мини-игру",
+    en: "Play a mini game",
+    ua: "Зіграти у міні-гру",
+  },
+  textgame:{
+    ru: "Вы можете cыграть в нашу мини-игру в ожидании звонка менеджера. Для начала игры кликните в игровом поле.",
+    en: "You can play our mini-game while waiting for the manager's call. To start the game, click in the playing field.",
+    ua: "Ви можете зіграти в нашу міні-гру, чекаючи дзвінка менеджера. Для початку гри клацніть в ігровому полі.",
+  },
+  score:{
+    ru: "Пройдено: <span id='scoreSpan'></span> км.",
+    en: "Traveled: <span id='scoreSpan'></span> km.",
+    ua: "Пройдено: <span id='scoreSpan'></span> км.",
+    },
+  gameover: {
+    ru: "Конец игры! Ваш счет: <span id='gameScore'></span>",
+    en: "End of the game! Your score: <span id='gameScore'></span>",
+    ua: "Кінець гри! Ваш рахунок: <span id='gameScore'></span>",
+  },
+  gemecontinue:{
+    ru: "Продолжить",
+    en: "Continue",
+    ua: "Продовжити",
+  },
+  footerabout: {
+    ru: "Об агенстве",
+    en: "About agency",
+    ua: "Про агенство",
+  },
+  footermain:{
+    ru: "Главная",
+    en: "Main",
+    ua: "Головна",
+  },
+  footerpartners: {
+    ru: "Наши партнеры",
+    en: "Our partners",
+    ua: "Наші партнери",
+  },
+  footerobject:{
+    ru: "Наши актуальные объекти",
+    en: "Our current objects",
+    ua: "Наші актуальні об'єкти",
+  },
+  footercontact:{
+    ru: "Связаться с нами",
+    en: "Contact with us",
+    ua: "Зв'язатися з нами",
+  },
+  innercontact1:{
+    ru: "Контактные данные",
+    en: "Contact details",
+    ua: "Контактні дані",
+  },
+  innercontact2:{
+    ru: "<p>Назаров Владимир Олегович</p><p>Собственник агенства недвижимости</p><p>Dolbaeb@grifon.ua</p><p>+380677595191</p><p>+380935374207</p>",
+    en: "<p>Nazarov Vladimir Olegovich</p><p>Owner of a real estate agency</p><p>Dolbaeb@grifon.ua</p><p>+380677595191</p><p>+380935374207</p>",
+    ua: "<p>Назаров Володимир Олегович</p><p>Власник агентства нерухомості</p><p>Dolbaeb@grifon.ua</p><p>+380677595191</p><p>+380935374207</p>",
+  },
+
 };
 
 select.addEventListener('change', changeURLLanguage);
@@ -560,7 +747,7 @@ function changeLanguage() {
     hash = hash.substr(1);
     console.log(hash);
     if (!allLang.includes(hash)) {
-        location.href = window.location.pathname + '#ru';
+        location.href = window.location.pathname + '#ua';
         location.reload();
     }
     select.value = hash;
@@ -568,12 +755,17 @@ function changeLanguage() {
     document.querySelector('.lng-callform2').placeholder = langArr['callform2'][hash];
     document.querySelector(".lng-callform3").placeholder = langArr["callform3"][hash];
     document.querySelector(".lng-callform4").placeholder = langArr["callform4"][hash];
+    document.querySelector('.lng-callform2-2').placeholder = langArr['callform2-2'][hash];
+    document.querySelector(".lng-callform2-3").placeholder = langArr["callform2-3"][hash];
+    document.querySelector(".lng-callform2-4").placeholder = langArr["callform2-4"][hash];
+    document.querySelector(".lng-callformbtn2").value = langArr["callformbtn2"][hash];
     
     let except = document.querySelector(".lng-callform4");
+    let except2 = document.querySelector(".lng-callform2-4");
     for (let key in langArr) {
         let elem = document.querySelector('.lng-' + key);
         if (elem) {
-            if (elem != except) {
+            if (elem != except && elem != except2) {
                 elem.innerHTML = langArr[key][hash];
             } 
         }
