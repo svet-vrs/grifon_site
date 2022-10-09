@@ -733,6 +733,7 @@ const langArr = {
 
 };
 
+console.log("Hello");
 select.addEventListener('change', changeURLLanguage);
 
 // Перенаправление на url с указанным языком
