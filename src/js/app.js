@@ -361,32 +361,225 @@ window.addEventListener('load', () => {
 });
 
 
-//lang
+// ------  Смена языка -------
 
-var arrLang = {
-    'en': {
-        'mainpage': 'Main page',
-        'developers': 'Developers',
-        'ourservices': 'Our services',
-        'contacts': 'Contacts',
-        'usefulinformation': 'Useful information',
-        
-    },
-    'ru': {
-        'mainpage': 'Главная',
-        'developers': 'Застройщики',
-        'ourservices': 'Наши услуги',
-        'contacts': 'Контакты',
-        'usefulinformation': 'Полезная информация',
-    }
+const select = document.querySelector('select');
+const allLang = ['en', 'ru', 'ua'];
+
+const langArr = {
+  // Заголовки секций
+  title1: {
+    ru: "Об агенстве",
+    en: "About agency",
+    ua: "Про агенство",
+  },
+  title2: {
+    ru: "Наши партнеры",
+    en: "Our partners",
+    ua: "Наші партнери",
+  },
+  title3: {
+    ru: "Чем мы занимаемся?",
+    en: "What are we doing?",
+    ua: "Що ми робимо?",
+  },
+  title4: {
+    ru: "Наши актуальные объекти",
+    en: "Our current objects",
+    ua: "Наші актуальні об'єкти",
+  },
+  title5: {
+    ru: "Как нас найти?",
+    en: "How to find us?",
+    ua: "Як нас знайти?",
+  },
+  title6: {
+    ru: "<h1>Консультация по любому вопросу</h1><h1>Свяжитесь с нами</h1>",
+    en: "<h1>Consultation on any issue</h1><h1>Contact us</h1>",
+    ua: "<h1>Консультація з будь-якого питання</h1><h1>Зв'яжіться з нами</h1>",
+  },
+  title7: {
+    ru: "Часто задаваемые вопросы",
+    en: "Frequently asked Questions",
+    ua: "Часто задавані питання",
+  },
+  title8: {
+    ru: "Мини-игра",
+    en: "Mini-game",
+    ua: "Міні-гра",
+  },
+  title9: {
+    ru: "Если вы не нашли ответ на свой вопрос, можете связаться с менеджером",
+    en: "If you did not find the answer to your question, you can contact the manager",
+    ua: "Якщо ви не знайшли відповіді на своє запитання, можете зв'язатися з менеджером",
+  },
+// Подзаголовки первой секции
+  subtitle1: {
+    ru: "Професиональная команда экспертов на рынке премиальных объектов",
+    en: "A professional team of experts in the premium property market",
+    ua: "Професійна команда експертів на ринку преміальних об'єктів",
+  },
+  subtitle2: {
+    ru: "Эффективно продаем и сдаем в аренду объекты недвижимости",
+    en: "Effectively sell and rent real estate",
+    ua: "Ефективно продаємо та здаємо в оренду об'єкти нерухомості",
+  },
+  subtitle3: {
+    ru: "Экономим ваше время в вопросах недвижимости",
+    en: "We save your time in real estate matters",
+    ua: "Заощаджуємо ваш час у питаннях нерухомості",
+  },
+  about: {
+    ru: "<p>Агентство недвижимости Грифон – это современная, дружная, позитивная и опытная команда специалистов  - экспертов на рынке недвижимости Украины и мира.</p><p> Наша главная задача – стать для вас специалистом, который обеспечит решение Вашего вопроса!</p><p> Агентство находится в условиях постоянного обучения, профессионального и личностного роста, позволяет нам качественно, грамотно, работать на достижение результата. Для решения Вашего вопроса нам потребуется – определить Ваш запрос, и максимально точно удовлетворить Вашу потребность, и осуществить ее!</p><p>Наша стратегия – это дружелюбные отношения с нашим клиентом, желание эффективно помочь, и сэкономить Ваше время с целью минимизировать риски и ресурсы. </p><p>С помощью нашей команды Вы сможете полностью лишиться волнений и получить решение Вашей задачи.Вместо обещаний, мы выбираем реальные действия!</p>",
+    en: "<p>Gryphon Real Estate Agency is a modern, friendly, positive and experienced team of specialists - experts in the real estate market of Ukraine and the world.</p><p> Our main task is to become a specialist for you who will provide a solution to your question!</p><p> The agency is in conditions of constant learning, professional and personal growth, which allows us to work efficiently, competently, to achieve results. To solve your issue, we will need to define your request, and meet your need as accurately as possible, and implement it!</p><p>Our strategy is friendly relations with our client, the desire to help effectively, and save your time in order to minimize risks and resources. </p><p>With the help of our team, you can completely lose your worries and get a solution to your problem. Instead of promises, we choose real actions!</p>",
+    ua: "<p>Агентство нерухомості Грифон – це сучасна, дружня, позитивна та досвідчена команда фахівців - експертів на ринку нерухомості України та світу.</p><p> Наше головне завдання – стати для вас фахівцем, який забезпечить вирішення Вашого питання!</p><p> Агентство перебуває в умовах постійного навчання, професійного та особистісного зростання, дозволяє нам якісно, ​​грамотно, працювати на досягнення результату. Для вирішення Вашого питання нам потрібно буде – визначити Ваш запит, і максимально точно задовольнити Вашу потребу, і здійснити її! ризики та ресурси. </p><p>За допомогою нашої команди Ви зможете повністю позбутися хвилювань і отримати вирішення Вашого завдання. Замість обіцянок, ми обираємо реальні дії!</p>",
+  },
+// Форма обратной связи
+  callformbtn:{
+    ru: "Заказать звонок",
+    en: "Request a call",
+    ua: "Замовити дзвінок",
+  },
+  callform1:{
+    ru: "Оформить заявку",
+    en: "Make a request",
+    ua: "Оформити заявку",
+  },
+  callform2:{
+    ru: "Имя",
+    en: "Name",
+    ua: "Ім'я",
+  },
+  callform3:{
+    ru: "Номер телефона",
+    en: "Phone number",
+    ua: "Номер телефону",
+  },
+  callform4:{
+    ru: "Комментарий (Необязательно)",
+    en: "Comment (Optional)",
+    ua: "Коментар (Необов'язково)",
+  },
+  callform5:{
+    ru: "Отправить",
+    en: "Send",
+    ua: "Надіслати",
+  },
+  
+
+
+  // Элементы меню
+  menu1: {
+    ru: "Главная",
+    en: "Main",
+    ua: "Головна",
+  },
+  menu2: {
+    ru: "Застройщики",
+    en: "Developers",
+    ua: "Забудовники",
+  },
+  menu3: {
+    ru: "Наши услуги &nbsp;<span class='menu__arrow'><i class='fa-solid fa-angle-down'></i></span>",
+    en: "Our services &nbsp;<span class='menu__arrow'><i class='fa-solid fa-angle-down'></i></span>",
+    ua: "Наші послуги &nbsp;<span class='menu__arrow'><i class='fa-solid fa-angle-down'></i></span>",
+  },
+  menu4: {
+    ru: "Продажа квартир",
+    en: "Sale of apartments",
+    ua: "Продаж квартир",
+  },
+  menu5: {
+    ru: "Продажа домов",
+    en: "Sales of houses",
+    ua: "Продаж будинків",
+  },
+  menu6: {
+    ru: "Продажа коммерческой недвижимости",
+    en: "Sale of commercial real estate",
+    ua: "Продаж комерційної нерухомості",
+  },
+  menu7: {
+    ru: "Продажа земельных участков",
+    en: "Sale of land",
+    ua: "Продаж земельних ділянок",
+  },
+  menu8: {
+    ru: "Бизнес под ключ",
+    en: "Turnkey business",
+    ua: "Бізнес під ключ",
+  },
+  menu9: {
+    ru: "Инвестиционное предложение",
+    en: "Investment proposal",
+    ua: "Інвестиційна пропозиція",
+  },
+  menu10: {
+    ru: "Контакты",
+    en: "Contacts",
+    ua: "Контакти",
+  },
+  menu11: {
+    ru: "Полезная информация &nbsp;<span class='menu__arrow'><i class='fa-solid fa-angle-down'></i></span>",
+    en: "Useful information &nbsp;<span class='menu__arrow'><i class='fa-solid fa-angle-down'></i></span>",
+      ua: "Корисна інформація &nbsp;<span class='menu__arrow'><i class='fa-solid fa-angle-down'></i></span>",
+  },
+  menu12: {
+    ru: "Наши партнеры",
+    en: "Our partners",
+    ua: "Наші партнери",
+  },
+  menu13: {
+    ru: "Наши актуальные объекты",
+    en: "Our current objects",
+    ua: "Наші актуальні об'єкти",
+  },
+  menu14: {
+    ru: "Часто задаваемые вопросы",
+    en: "Frequently asked Questions",
+    ua: "Часто задавані питання",
+  },
+  menu15: {
+    ru: "Мини-игра",
+    en: "Mini game",
+    ua: "Міні-гра",
+  },
+};
+
+select.addEventListener('change', changeURLLanguage);
+
+// Перенаправление на url с указанным языком
+function changeURLLanguage() {
+    let lang = select.value;
+    location.href = window.location.pathname + '#' + lang;
+    location.reload();
 }
 
-document.querySelector(function() {
-    document.querySelector('.translate').click(function() {
-      var lang = document.querySelector(this).attr('id');
+function changeLanguage() {
+    let hash = window.location.hash;
+    hash = hash.substr(1);
+    console.log(hash);
+    if (!allLang.includes(hash)) {
+        location.href = window.location.pathname + '#ru';
+        location.reload();
+    }
+    select.value = hash;
+    
+    document.querySelector('.lng-callform2').placeholder = langArr['callform2'][hash];
+    document.querySelector(".lng-callform3").placeholder = langArr["callform3"][hash];
+    document.querySelector(".lng-callform4").placeholder = langArr["callform4"][hash];
+    
+    let except = document.querySelector(".lng-callform4");
+    for (let key in langArr) {
+        let elem = document.querySelector('.lng-' + key);
+        if (elem) {
+            if (elem != except) {
+                elem.innerHTML = langArr[key][hash];
+            } 
+        }
+    }
+    console.log("Hello3");
+}
 
-      document.querySelector('.lang').each(function(index, item) {
-        document.querySelector(this).text(arrLang[lang][document.querySelector(this).attr('key')]);
-      });
-    });
-  });
+changeLanguage();
+
