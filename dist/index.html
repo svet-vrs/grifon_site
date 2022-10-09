@@ -78,10 +78,7 @@
         <li class="twitter"><a href="https://t.me/grifon_agency_bot"><i class="fa fa-telegram fa-2x" aria-hidden="true"></i></a></li>
         <li class="instagram"><a href="https://www.instagram.com/grifon.agency/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
         <li class="whatsapp"><a href="https://vibr.cc/380677595191"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
-        <li class="icons__list-lang-ru"><button id="ru" class="translate"><img src="img\iconru.png" alt="ruflag" width="25px" height="28px"></button></li>
-        <li class="icons__list-lang-ua"><button id="ua" class="translate"><img src="img\iconua.png" alt="uaflag" width="25px" height="28px"></button></li>
-        <li class="icons__list-lang-en"><button id="en" class="translate"><img src="img\iconeng.png" alt="enflag" width="25px" height="28px"></button></li>
-
+    
       </ul>
     </div>
     
@@ -209,6 +206,11 @@
                     <img src="img/icon7.png" alt="Картинка 6">
                   </div>
                 </div>
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="img/icon12.png" alt="Картинка 6">
+                  </div>
+                </div>
       
               </div>
         </section>
@@ -242,7 +244,7 @@
               </div>
               <div class="catalog__item item7" style="background-image: url(img/category7.jpg);" data-aos="fade-up" data-aos-duration="800">
                 <!-- <img class="catalog__img" src="img/category4.jpg" alt="Картинка 4"> -->
-                <a href="https://taplink.cc/grifonobject"><p class="catalog__title">Недвижимость за рубежом</p></a>
+                <a href="https://tlgg.ru/@AnNguraf"><p class="catalog__title">Недвижимость за рубежом</p></a>
               </div>
             </div>
           </div>
@@ -250,61 +252,13 @@
         <section class="page__section page__section_5" id="page__section_5">
           <div class="page__content" data-aos="fade-in">
             <h2 class="page__sub-title">Наши актуальные объекты</h2>
-            <div class="page__text">
-              <div class="team-member" data-aos="fade-in">
-                <div class="our-team">
-                    <div class="pic">
-                        <a href="https://taplink.cc/grifonobject"><img src="img/grifonsleep.png"></a>
-                        
-                    </div>
-                   
-                    <!-- <h3 class="title">Williamson</h3>
-                    <span class="post">Web Developer</span>
 
-                   
-                    <ul class="social">
-                      <li><a href="#" class="fa fa-telegram"></a></li>
-                      <li><a href="#" class="fa fa-instagram"></a></li>
-                      <li><a href="#" class="fa fa-whatsapp"></a></li>
-    
-                    </ul>
 
-                </div>
+
+            <div class="our-objects" >
+              <div class="pic" data-aos="fade-in">
+                <a href="https://taplink.cc/grifonobject"><img src="img/grifonsleep.png"></a>      
               </div>
-              <div class="team-member" data-aos="fade-in" data-aos-delay="100">
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="img/icon2.png" >
-                    </div>
-                    <h3 class="title">Kristiana</h3>
-                    <span class="post">Web Designer</span>
-
-                    
-                    <ul class="social">
-                     <li><a href="#" class="fa fa-telegram"></a></li>
-                      <li><a href="#" class="fa fa-instagram"></a></li>
-                      <li><a href="#" class="fa fa-whatsapp"></a></li>
-                    </ul>
-
-                </div>
-              </div> -->
-              <!-- <div class="team-member" data-aos="fade-in" data-aos-delay="200">
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="img/icon5.png">
-                    </div>
-                    <h3 class="title">Kristiana</h3>
-                    <span class="post">Web Designer</span>
-                    
-                    
-                    <ul class="social">
-                      <li><a href="#" class="fa fa-telegram"></a></li>
-                      <li><a href="#" class="fa fa-instagram"></a></li>
-                      <li><a href="#" class="fa fa-whatsapp"></a></li>
-                    </ul>-->
-
-                </div>
-              </div> 
             </div>
           </div>
         </section>
@@ -341,7 +295,7 @@
                 <input name="user_phone" type="text" class="feedback-input" id="email" autocomplete="tel" placeholder="Номер телефона" />
                 <textarea name="user_description" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Комментарий (Необязательно)"></textarea>
                 <div class="submit">
-                  <input type="submit" value="Заказать звонок" onclick="open_game()" id="button-blue"/>
+                  <input type="submit" value="Заказать звонок" onclick="open_game()" class="button-blue"/>
                 </div>
               </div>
             </form>
@@ -396,6 +350,7 @@
                 </div>
               </div>
             </div>
+            <div class="button-blue" id="open_game">Сыграть в мини-игру</div>
           </div>
         </section>
         <section id="game" class="page__section page__section_9" id="page__section_9">
@@ -478,14 +433,13 @@
     <div class="social"><a href="https://t.me/grifon_agency_bot"><i class="fa-brands fa-telegram"></i></a><a href="https://www.instagram.com/grifon.agency/"><i class="fa-brands fa-instagram"></i></a><a href="https://vibr.cc/380677595191"><i class="fa-brands fa-viber"></i></div>
     <ul class="list-inline">
         <li class="list-inline-item"><a href="#">Главная</a></li>
-        <li class="list-inline-item"><a href="#">Об Агенстве</a></li>
-        <li class="list-inline-item"><a href="#">Наши партнеры</a></li>
-        <li class="list-inline-item"><a href="#">Наши сотрудники</a></li>
+        <li class="list-inline-item"><a href="index.html#page__section_2">Об Агенстве</a></li>
+        <li class="list-inline-item"><a href="index.html#page__section_3">Наши партнеры</a></li>
+        <li class="list-inline-item"><a href="index.html#page__section_5">Наши актуальные объекты</a></li>
         <li class="list-inline-item"><button class="modal-trigger" data-custom-open="modal-2" data-form="Форма секции Нам доверяют">Сотрудничать с нами</button></li>
-        
+        <li> <p class="copyright">Grigon Agency © 2022</p></li>
+        <li> <a class="copyright" href="https://taplink.cc/hsdev">HS Developers </a></li>
     </ul>
-    <p class="copyright">Grigon Agency © 2022</p>
-</div>
   </div>
 </footer>
 
