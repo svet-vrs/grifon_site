@@ -207,6 +207,7 @@ let button = document.getElementById("open_game");
 let game = document.getElementById("game");
 let game_menu = document.getElementById("game_menu");
 let game_menu_btn = document.getElementById("game_menu_btn");
+let close_btn = document.getElementById("cross");
 var counter = 0;
 var charSpeed = 600;
 var houseSpeed = 2.5;
@@ -226,6 +227,11 @@ button.addEventListener('click', function () {
     });
 
 });
+close_btn.addEventListener("click", function () {
+    game_stop();
+    game.style.display = "none";
+  
+});
 function game_stop() {
     block1.style.animation = "none";
     block2.style.animation = "none";
@@ -235,12 +241,14 @@ function game_stop() {
     game_menu.style.display = "flex";
     document.getElementById("gameScore").innerHTML = "&nbsp;" + Math.floor(counter / 100);
     document.getElementById("scoreArea").style.display = "none";
+    close_btn.style.display = "block";
 }
 function game_start() {
     game_menu.style.display = "none";
     switch_animation();
     counter = 0;
     document.getElementById("scoreArea").style.display = "flex";
+    close_btn.style.display = "none";
     block1.style.animation = "goLeft " + houseSpeed + "s infinite linear";
     setTimeout(function () {
         block2.style.animation = "goLeft " + houseSpeed + "s infinite linear";
